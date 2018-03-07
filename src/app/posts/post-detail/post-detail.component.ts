@@ -35,6 +35,7 @@ export class PostDetailComponent {
   deletePost(id: string) {
     this.postService.deletePost(id);
   }
-  
+ updatePost(content: string){
+  }
 
 }

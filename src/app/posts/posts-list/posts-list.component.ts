@@ -27,5 +27,4 @@ export class PostsListComponent implements OnInit {
     this.postService.create(this.content);
     this.content = '';
   }
-
 }
