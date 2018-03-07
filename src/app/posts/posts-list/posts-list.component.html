@@ -1,0 +1,15 @@
+<h1>Timeline</h1>
+<p>Post to your feed</p>
+
+<input [(ngModel)]="content" placeholder="Whats on your mind?" class="input">
+
+
+<button class="button is-success" (click)="createPost()" [disabled]="content?.length < 2 || content?.length > 200">
+  Add to Feed {{ today | date }}
+</button>
+<hr>
+<div *ngFor="let post of posts | async">
+  <post-detail [post]="post"></post-detail>
+</div>
+
+
