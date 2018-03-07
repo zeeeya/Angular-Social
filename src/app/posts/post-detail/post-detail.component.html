@@ -7,10 +7,7 @@
   <i class="fa fa-thumbs-o-down"></i>
   </span>
   <span class="button is-small is-danger" (click)='deletePost(post?.id)'><i class="fa fa-times"></i></span>
-  <span class="button is-small is-warning" (click)='updateTimeStamp()'><i class="fa fa-check"></i></span>
   
 </p>
-
-<p>{{ item.timeStamp | date: 'medium' }}</p>
 <p>This post has been like {{ post.hearts || 0 }} times.</p>
 </div>
